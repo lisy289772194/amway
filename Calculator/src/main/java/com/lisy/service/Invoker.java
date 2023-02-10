@@ -27,7 +27,7 @@ public class Invoker {
         for (int i = 0; i < levels; i++) {
             if (current > 0) {
                 --current;
-                commands.get(i).execute();
+                commands.get(i).unexecute();
             }
         }
     }
